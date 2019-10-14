@@ -34,8 +34,9 @@ function anualAMensual(salarioAnual) {
 
 calcular_button.onclick = function() {
   let salarioAnual = salarioAnual_input.value;
+  let salarioMensual = anualAMensual(salarioAnual);
 
-  salarioMensual_input.value = anualAMensual(salarioAnual);
+  if(salarioMensual) salarioMensual_input.value = '$' + anualAMensual(salarioAnual).toFixed(2);
 }
 
 
