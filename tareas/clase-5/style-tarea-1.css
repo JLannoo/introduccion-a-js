@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap');
+
+*{
+    border: none;
+    margin: none;
+    font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+body{
+    background: #222;
+    color: white;
+}
+
+#sueldo{
+    margin: 10%;
+    text-align: center;
+}
+
+#sueldo > label{
+    display:block;
+    text-decoration: underline white;
+}
+
+#sueldo > input{
+    width: 50%;
+    margin: 25px;
+
+    border: solid #aaa 3px;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+#sueldo > input:disabled{
+    background-color: #555;
+    color: white;
+}
+
+#sueldo > button{
+    background: forestgreen;
+    border-radius: 10px;
+
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+#sueldo > input:focus{
+    outline: none;
+}
+
+#sueldo > button:active{
+    transform: scale(1.05);
+}
+
+#sueldo > button:focus{
+    outline: none;
+}
