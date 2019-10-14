@@ -28,7 +28,6 @@ const salarioAnual_input = document.querySelector('#anual');
 const salarioMensual_input = document.querySelector('#mensual');
 
 function anualAMensual(salarioAnual) {
-  console.log(Number(salarioAnual))
   return (Number(salarioAnual)? salarioAnual/12 : "");
 }
 
@@ -36,7 +35,7 @@ calcular_button.onclick = function() {
   let salarioAnual = salarioAnual_input.value;
   let salarioMensual = anualAMensual(salarioAnual);
 
-  if(salarioMensual) salarioMensual_input.value = '$' + anualAMensual(salarioAnual).toFixed(2);
+  if(salarioMensual) salarioMensual_input.value = '$' + salarioMensual.toFixed(2);
 }
 
 
